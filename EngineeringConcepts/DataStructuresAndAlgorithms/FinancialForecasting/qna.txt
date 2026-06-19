@@ -1,0 +1,13 @@
+1. Explain the Concept of Recursion and How It Can Simplify Certain Problems
+
+Recursion is a programming technique in which a function calls itself to solve smaller instances of the same problem. A recursive function consists of a base case, which terminates the recursion, and a recursive case, which reduces the problem into smaller subproblems.
+
+Recursion simplifies problems that have a repetitive or self-similar structure. It provides a clear and elegant solution for problems such as factorial calculation, Fibonacci series, tree traversal, and financial forecasting. In financial forecasting, recursion repeatedly applies the growth rate to the current value until the required number of years reaches zero.
+
+2. Discuss the Time Complexity of the Recursive Algorithm. 3. Explain How to Optimize the Recursive Solution to Avoid Excessive Computation
+
+The recursive algorithm predicts future values by repeatedly applying the growth rate to the current value until the number of years becomes zero.
+Its time complexity is O(n) because one recursive call is made for each year.
+The space complexity is O(n) due to the recursion stack.
+Excessive computation and stack usage can be avoided by using an iterative approach or dynamic programming techniques, which reduce auxiliary space to O(1).
+

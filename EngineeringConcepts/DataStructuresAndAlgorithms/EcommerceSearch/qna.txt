@@ -1,0 +1,10 @@
+| Algorithm     | Best Case | Average Case | Worst Case |
+| ------------- | --------- | ------------ | ---------- |
+| Linear Search | O(1)      | O(n)         | O(n)       |
+| Binary Search | O(1)      | O(log n)     | O(log n)   |
+
+Conclusion:
+
+Binary Search is more suitable for an e-commerce platform because product catalogs can contain thousands or millions of items.
+Since Binary Search reduces the search space by half at each step, it provides much faster search performance than Linear Search.
+However, the data must be sorted before applying Binary Search.

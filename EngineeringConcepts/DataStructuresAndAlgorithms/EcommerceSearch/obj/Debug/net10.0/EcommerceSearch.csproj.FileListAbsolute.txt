@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\bin\Debug\net10.0\EcommerceSearch.exe
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\bin\Debug\net10.0\EcommerceSearch.deps.json
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\bin\Debug\net10.0\EcommerceSearch.runtimeconfig.json
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\bin\Debug\net10.0\EcommerceSearch.dll
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\bin\Debug\net10.0\EcommerceSearch.pdb
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.AssemblyInfo.cs
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.dll
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\refint\EcommerceSearch.dll
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.pdb
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\EcommerceSearch.genruntimeconfig.cache
+C:\Users\Admin\Documents\deepSkillHandson\EngineeringConcepts\DataStructuresAndAlgorithms\EcommerceSearch\obj\Debug\net10.0\ref\EcommerceSearch.dll
