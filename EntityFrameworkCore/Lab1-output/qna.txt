@@ -1,0 +1,186 @@
+1. What is ORM?
+
+ORM = Object Relational Mapping
+
+ORM is a technique that connects C# objects with database tables.
+
+Without ORM:
+
+we write SQL manually : SELECT * FROM Products;
+Then convert the results into C# objects ourselves.
+
+With EF Core ORM:
+
+Create a C# class:
+public class Product
+{
+    public int ProductId { get; set; }
+    public string ProductName { get; set; }
+    public decimal Price { get; set; }
+}
+EF Core automatically maps it to a database table:
+| ProductId | ProductName | Price |
+| --------- | ----------- | ----- |
+| 1         | Laptop      | 50000 |
+| 2         | Mouse       | 1000  |
+
+Mapping Example:
+C# Class:
+
+public class Product
+{
+    public int ProductId { get; set; }
+    public string ProductName { get; set; }
+}
+
+becomes SQL Table:
+
+Products
+---------
+ProductId
+ProductName
+
+Benefits of ORM
+1. Productivity
+
+Instead of writing:
+
+INSERT INTO Products(ProductName)
+VALUES('Laptop')
+
+You write:
+
+context.Products.Add(
+    new Product
+    {
+        ProductName = "Laptop"
+    });
+
+context.SaveChanges();
+
+Less code, faster development.
+
+2. Maintainability
+
+Changes happen in one place.
+
+Example:
+
+public string ProductName { get; set; }
+
+changed to
+
+public string Name { get; set; }
+
+EF Core migrations can update the database automatically.
+
+3. Abstraction from SQL
+
+Developers work mostly with C# objects.
+
+Example:
+
+var products = context.Products.ToList();
+
+instead of:
+
+SELECT * FROM Products
+
+/////////////////////////////////////////////////////////////////////////
+
+2. EF Core vs EF Framework (EF6)
+
+| Feature            | EF Core 8 | EF6     |
+| ------------------ | --------- | ------- |
+| Cross Platform     | Yes       | No      |
+| Windows Only       | No        | Yes     |
+| Linux Support      | Yes       | No      |
+| Mac Support        | Yes       | No      |
+| Performance        | Faster    | Slower  |
+| LINQ Support       | Yes       | Yes     |
+| Async Queries      | Yes       | Limited |
+| Modern Development | Yes       | Older   |
+| Lightweight        | Yes       | No      |
+
+EF Core
+	Modern ORM
+	Open source
+	Runs on Windows, Linux, macOS
+	Better performance
+EF Framework (EF6)
+	Older version
+	Windows-focused
+	Mature but less flexible
+
+//////////////////////////////////////////////////////////////////////////
+
+3. EF Core 8.0 Features:
+
+A. JSON Column Mapping
+
+Store JSON data directly in SQL Server columns.
+
+Example:
+
+{
+  "Color": "Black",
+  "Warranty": "2 Years"
+}
+
+can be stored in one column.
+
+Useful for:
+
+Product specifications
+Metadata
+Dynamic attributes
+
+B. Compiled Models:
+
+EF Core pre-generates model information.
+
+Benefits:
+
+Faster startup
+Better performance for large projects
+
+C. Interceptors:
+
+Allow custom logic before or after database operations.
+
+Example:
+
+public override int SaveChanges()
+{
+    Console.WriteLine("Data Saved");
+    return base.SaveChanges();
+}
+
+Use cases:
+
+Logging
+Auditing
+Validation
+
+D. Better Bulk Operations:
+
+Operations on large datasets are more efficient.
+
+Example:
+
+context.Products.AddRange(products);
+
+instead of multiple inserts.
+
+Benefits:
+
+Faster execution
+Reduced database calls
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+Conclusion
+
+Entity Framework Core is an ORM framework that maps C# classes to relational database tables. It reduces the need for manual SQL, improves productivity, and simplifies database operations. 
+EF Core 8.0 offers modern features such as JSON column mapping, compiled models, interceptors, and improved performance. 
+Compared to EF6, EF Core is cross-platform, lightweight, and optimized for modern .NET applications.
