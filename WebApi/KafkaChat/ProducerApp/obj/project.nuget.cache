@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5PVyK3USy40=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\deepSkillHandson\\WebApi\\KafkaChat\\ProducerApp\\ProducerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\confluent.kafka\\2.14.2\\confluent.kafka.2.14.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\librdkafka.redist\\2.14.2\\librdkafka.redist.2.14.2.nupkg.sha512"
+  ],
+  "logs": []
+}
